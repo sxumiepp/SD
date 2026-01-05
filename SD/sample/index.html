@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Member Login</title>
+<style>
+    * {
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        margin: 0;
+        height: 100vh;
+        background: linear-gradient(135deg, #6f8fc9, #2f5fa7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+    }
+
+    .login-container {
+        width: 360px;
+        background: linear-gradient(160deg, #4f77b8, #3b66a8);
+        border-radius: 20px;
+        padding: 40px 30px;
+        text-align: center;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    .avatar {
+        width: 100px;
+        height: 100px;
+        background: #9ec3de;
+        border-radius: 50%;
+        margin: -90px auto 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .avatar::before {
+        content: "";
+        width: 50px;
+        height: 50px;
+        background: #cfe6f3;
+        border-radius: 50%;
+        display: block;
+    }
+
+    h2 {
+        margin-bottom: 25px;
+        letter-spacing: 1px;
+        font-size: 20px;
+    }
+
+    .input-group {
+        margin-bottom: 15px;
+    }
+
+    .input-group input {
+        width: 100%;
+        padding: 12px 15px;
+        border-radius: 10px;
+        border: 2px solid rgba(255,255,255,0.6);
+        background: transparent;
+        color: #fff;
+        outline: none;
+        font-size: 14px;
+    }
+
+    .input-group input::placeholder {
+        color: rgba(255,255,255,0.8);
+        text-align: center;
+    }
+
+    .login-btn {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 30px;
+        background: #a9c7de;
+        color: #1f3f6f;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: 0.3s;
+    }
+
+    .login-btn:hover {
+        background: #c1d9ea;
+    }
+
+    .remember {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 15px 0;
+        font-size: 14px;
+    }
+
+    .remember input {
+        margin-right: 8px;
+    }
+
+    .links {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    .links a {
+        color: #cfe6ff;
+        text-decoration: none;
+    }
+
+    .links a:hover {
+        text-decoration: underline;
+    }
+
+    .create {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .create a {
+        color: #8ee6ff;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .create a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+
+<div class="login-container">
+    <div class="avatar"></div>
+
+    <h2>MEMBER LOGIN</h2>
+
+    <div class="input-group">
+        <input type="text" placeholder="USERNAME">
+    </div>
+
+    <div class="input-group">
+        <input type="password" placeholder="PASSWORD">
+    </div>
+
+    <button class="login-btn">LOGIN</button>
+
+    <div class="remember">
+        <input type="checkbox" id="remember">
+        <label for="remember">Remember me</label>
+    </div>
+
+    <div class="links">
+        <a href="#">Forgot password?</a>
+    </div>
+
+    <div class="create">
+        Not a member? <a href="#">CREATE ACCOUNT</a>
+    </div>
+</div>
+
+</body>
+</html>
