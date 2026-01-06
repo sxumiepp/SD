@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPath UI</title>
+    <link rel="stylesheet" href="registration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript" src="loginSignup.js" defer></script>
+</head>
+<body>
+
+    
+
+    <div class="phone-screen loading-screen">
+        <div class="status-bar"><span>09:41</span> <i class="fa-solid fa-signal"></i> <i class="fa-solid fa-wifi"></i> <i class="fa-solid fa-battery-full"></i></div>
+        
+        <div class="avatar-hero">
+            <div class="circle-outer">
+                <div class="circle-inner">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Avatar">
+                </div>
+            </div>
+        </div>
+
+        <div class="branding">
+            <h1 class="logo-text">EDUPATH</h1>
+            <p>The Future of Learning!</p>
+        </div>
+
+        <div class="loader-container">
+            <div class="progress-bar"><div class="fill"></div></div>
+            <p>Loading...</p>
+        </div>
+        <div class="home-indicator"></div>
+    </div>
+
+    <div class="phone-screen auth-screen">
+        <div class="status-bar"><span>09:41</span> <i class="fa-solid fa-signal"></i> <i class="fa-solid fa-wifi"></i> <i class="fa-solid fa-battery-full"></i></div>
+        
+        <div class="wave-bg">
+            <div class="avatar-small">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Avatar">
+            </div>
+        </div>
+
+        <form id="form" class="auth-content" >
+
+            <p id="error-message"></p>
+            
+            <h2>Sign Up</h2>
+            <p class="subtitle">Enter your info to keep it going!</p>
+
+            <div class="input-group">
+                <i class="fa-regular fa-user"></i>
+                <input type="text" placeholder="Name" id="name-input" >
+            </div>
+
+            <div class="input-group">
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" placeholder="Email" id="email-input" >
+            </div>
+            
+            <div class="input-group">
+                <i class="fa-solid fa-lock"></i><input type="password" placeholder="Password" id="password-input">
+                <i class="fa-regular fa-eye-slash toggle-pass"></i>
+            </div>
+            <div class="input-group">
+                <i class="fa-solid fa-lock"></i><input type="password" placeholder="Repeat Password" id="passwordRepeat-input" >
+                <i class="fa-regular fa-eye-slash toggle-pass"></i>
+            </div>
+
+            <button class="primary-btn" type="submit">Sign Up</button>
+
+            <p class="footer-text">Already have an account? <a href="login.html" class="link">Login</a> / <a href="index.html">Home</a></p>
+        </form>
+        <div class="home-indicator"></div>
+
+        
+    </div>
+
+</body>
+</html>
+
+<style>
+    
+    #error-message{
+        color: red;
+    }
+
+
+</style>
